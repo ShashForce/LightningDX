@@ -1,8 +1,0 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
-	<p class="slds-p-horizontal--small">
-            <lightning:input label="First Name" name="FirstName" />
-            <lightning:input label="Last Name" name="LastName" />
-            <lightning:input type="email" label="Email" name="Email" />
-            <lightning:input type="date" label="Birth Date" name="Birthdate" />
-    </p>
-</aura:component>

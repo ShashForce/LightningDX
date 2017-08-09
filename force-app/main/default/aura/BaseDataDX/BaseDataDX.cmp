@@ -1,18 +1,25 @@
-<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId">
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+
+    <aura:attribute name="contact" type="Contact"/>
+    <force:recordData aura:id="dsComp"
+                        recordId="{!v.recordId}"
+                        mode="EDIT"
+                        layoutType="FULL"
+                        targetFields="{!v.contact}" />
 	
-	<force:recordData />
-	
-	<lightning:card iconName="standard:contact">
-        <aura:set attribute="title">
-            Contact Creator
-        </aura:set>
-        <aura:set attribute="footer">
-            <lightning:badge label="© shashforce 2017"/>
-        </aura:set>
+    <lightning:card title="Edit Contact">
+        
+        <p class="slds-p-horizontal--small">
+                <lightning:input label="First Name" name="FirstName" value="{!v.contact.FirstName}"/>
+                <lightning:input label="Last Name" name="LastName" value="{!v.contact.LastName}"/>
+                <lightning:input type="email" label="Email" name="Email" value="{!v.contact.Email}"/>
+                <lightning:input type="date" label="Birth Date" name="Birthdate" value="{!v.contact.Birthdate}"/>
+        </p>
+
         <aura:set attribute="actions">
-            <lightning:button variant="neutral" label="Save" iconName="utility:save" iconPosition="left" onclick="{! c.handleClick }" />
+            <lightning:button variant="brand" label="Save" iconName="utility:save" iconPosition="left" onclick="{! c.handleSave }" />
         </aura:set>
-        <c:formComponent/>
+        
     </lightning:card>
-    
+
 </aura:component>	
