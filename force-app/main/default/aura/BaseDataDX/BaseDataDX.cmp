@@ -16,6 +16,7 @@
                 <lightning:input type="date" label="Birth Date" name="Birthdate" value="{!v.contact.Birthdate}"/>
         </p>
 
+        
         <aura:set attribute="actions">
             <lightning:button variant="brand" label="Save" iconName="utility:save" iconPosition="left" onclick="{! c.handleSave }" />
         </aura:set>
