@@ -113,7 +113,7 @@
         <componentInstances>
             <componentName>BaseDataDX</componentName>
         </componentInstances>
-        <name>facet-f9e505d4-01dc-4133-9a16-c4ddb41319d3</name>
+        <name>facet-138313b5-d0bc-42a3-a58c-61660a4a6215</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -150,11 +150,11 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>body</name>
-                <value>facet-f9e505d4-01dc-4133-9a16-c4ddb41319d3</value>
+                <value>facet-138313b5-d0bc-42a3-a58c-61660a4a6215</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
-                <value>Quick Edit LC</value>
+                <value>Quick Edit</value>
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>

@@ -1,11 +1,12 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+<aura:component implements="lightning:actionOverride,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" >
 
     <aura:attribute name="contact" type="Contact"/>
     <force:recordData aura:id="dsComp"
                         recordId="{!v.recordId}"
                         mode="EDIT"
                         layoutType="FULL"
-                        targetFields="{!v.contact}" />
+                        targetFields="{!v.contact}"
+                        recordUpdated="{!c.handleRefresh}"/>
 	
     <lightning:card title="Edit Contact">
         
